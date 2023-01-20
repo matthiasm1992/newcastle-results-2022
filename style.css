@@ -15,6 +15,10 @@ body {
     background: #0f2d37;
 }
 
+.margin-a {
+    text-align: center;
+}
+
 .text-xs {
     font-size: 0.8rem !important; 
 }
@@ -26,6 +30,13 @@ body {
 .text-lg {
     font-size: 1.75rem;
     font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-xl {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 img {
@@ -52,9 +63,10 @@ img {
     text-align: center;    
 }
 
-.main-title {
-    font-size: 3rem;
+.main {
+    background: #eee;;
 }
+
 
 .main-img {
     width: 150px;
@@ -62,15 +74,20 @@ img {
     margin: 1rem 0;
 }
 
-.main-links {
-    display: flex;
-    flex-wrap: wrap;
+.links-container {
+    padding: 1rem;
     align-items: center;
     justify-content: center;
 }
 
+.main-links {
+    display: grid;
+    flex-direction: column;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
 .main-subtitle {
-    margin-bottom: -1rem;
     margin-top: 1rem;
 }
 
@@ -101,7 +118,7 @@ li + li {
     box-shadow: -1px 0px 20px 1px rgba(0,0,0,0.2);
     width: 700px;
     flex-direction: column;
-    margin: .5rem auto;
+    margin: 1.5rem auto;
     border-radius: 5px;
     border: none;
 }
@@ -137,6 +154,14 @@ li + li {
 .btn-primary {
     background-color: #008CBA;
     color: white;
+}
+
+.btn-matchday {
+    background: #000080;
+    color: #eee;
+    font-weight: bold;
+    padding: 1rem;
+    text-transform: uppercase;
 }
 
 .upper {
@@ -200,6 +225,7 @@ li + li {
 
 .goal-scorers {
     margin-top: 3px;
+    max-width: 400px;
     font-size: 14px;
     font-weight: bold;
 }
